@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60221f10-0414-4288-aa2a-c91bfcb566f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracer-common/src/main/java/com/github/x4096/tracer/common/utils/AnnotationUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracer-common/src/main/java/com/github/x4096/tracer/common/utils/IPUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracer-common/src/main/java/com/github/x4096/tracer/common/utils/RuntimeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracer-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/annotations/EnableTracer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/annotations/TracerMVC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/configuration/InterceptorAnnotationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/execption/AnnotationTracerMvcNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/execption/AnnotationTracerRpcNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/interceptor/TracingInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracer-core/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracer-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tracer-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracer-common/src/main/java/com/github/x4096/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracer-common/src/main/java/com/github/x4096/tracer/common/utils/TraceIdGeneratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/tracer-common/src/main/java/com/github/x4096/tracer/common/utils/TraceIdGeneratorUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracer-dubbo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracer-dubbo/src/main/java/com/github/x4096/tracer/dubbo/annotations/Tracer.java" beforeDir="false" afterPath="$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/annotations/TracerRPC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracer-dubbo/src/main/java/com/github/x4096/tracer/dubbo/aop/DubboLoggerAop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracer-dubbo/src/main/java/com/github/x4096/tracer/dubbo/aop/TracerAdvisingBeanPostProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracer-dubbo/src/main/java/com/github/x4096/tracer/dubbo/aop/TracerAnnotationClassAdvisor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracer-dubbo/src/main/java/com/github/x4096/tracer/dubbo/aop/TracerAnnotationClassPointcut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracer-dubbo/src/main/java/com/github/x4096/tracer/dubbo/filter/DubboTracerFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/dubbo/filter/DubboTracerFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracer-dubbo/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracer-dubbo/src/main/resources/org.apache.dubbo.rpc.Filter" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracer-dubbo/src/main/resources/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracer-dubbo/tracer-dubbo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tracer-core/tracer-core.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,112 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/bin/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/execption/AnnotationTracerMvcNotFoundException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/execption/AnnotationTracerRpcNotFoundException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="140" selection-start-line="11" selection-start-column="140" selection-end-line="11" selection-end-column="140" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/dubbo/filter/DubboTracerFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/configuration/InterceptorAnnotationConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/annotations/EnableTracer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/annotations/TracerMVC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/annotations/TracerRPC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracer-common/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/interceptor/TracingInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="82" selection-start-line="82" selection-end-line="82" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -287,52 +161,6 @@
               <item name="tracer" type="47feb1d3:ProjectViewModuleNode" />
               <item name="tracer" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tracer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tracer" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="tracer" type="462c0819:PsiDirectoryNode" />
-              <item name="tracer-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tracer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tracer" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="tracer" type="462c0819:PsiDirectoryNode" />
-              <item name="tracer-core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tracer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tracer" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="tracer" type="462c0819:PsiDirectoryNode" />
-              <item name="tracer-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tracer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tracer" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="tracer" type="462c0819:PsiDirectoryNode" />
-              <item name="tracer-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tracer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tracer" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="tracer" type="462c0819:PsiDirectoryNode" />
-              <item name="tracer-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tracer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tracer" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="tracer" type="462c0819:PsiDirectoryNode" />
-              <item name="tracer-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tracer" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -385,17 +213,18 @@
       <option name="presentableId" value="Default" />
       <updated>1574345515066</updated>
       <workItem from="1574345516439" duration="14535000" />
-      <workItem from="1574472582593" duration="7741000" />
+      <workItem from="1574472582593" duration="8589000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22276000" />
+    <option name="totallyTimeSpent" value="23124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2881563" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2881563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -411,7 +240,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32959184" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.31530613" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.31530613" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -434,13 +263,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/MavenRepo/org/springframework/spring-aop/4.3.16.RELEASE/spring-aop-4.3.16.RELEASE.jar!/org/springframework/aop/support/AbstractRegexpMethodPointcut.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/MavenRepo/org/springframework/spring-aop/4.3.16.RELEASE/spring-aop-4.3.16.RELEASE-sources.jar!/org/springframework/aop/support/AbstractRegexpMethodPointcut.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
@@ -643,9 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/bin/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/tracer-common/src/main/java/com/github/x4096/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -745,13 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/execption/AnnotationTracerMvcNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/execption/AnnotationTracerRpcNotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -818,10 +630,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="35" />
+        <state relative-caret-position="322">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tracer-core/src/main/java/com/github/x4096/tracer/execption/AnnotationTracerMvcNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/bin/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
