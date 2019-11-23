@@ -12,7 +12,7 @@
     <artifactId>tracer-core</artifactId>
 
     <name>tracer-core</name>
-    <url>http://www.example.com</url>
+    <url>https://github.com/0x4096/tracer</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,7 +25,6 @@
         <dependency>
             <groupId>com.github.x4096</groupId>
             <artifactId>tracer-common</artifactId>
-            <version>1.0.0</version>
         </dependency>
 
         <dependency>

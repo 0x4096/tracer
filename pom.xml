@@ -73,13 +73,6 @@
                     <include>META-INF/</include>
                 </includes>
             </resource>
-            <resource>
-                <directory>${user.dir}</directory>
-                <includes>
-                    <include>LICENSE</include>
-                    <include>META-INF/*</include>
-                </includes>
-            </resource>
         </resources>
 
         <plugins>
