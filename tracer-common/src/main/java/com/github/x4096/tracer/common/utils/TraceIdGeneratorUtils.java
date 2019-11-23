@@ -1,15 +1,12 @@
 package com.github.x4096.tracer.common.utils;
 
-import com.github.x4096.common.utils.env.system.XRuntimeUtils;
-import com.github.x4096.common.utils.network.IPUtils;
-
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @Author: 0x4096.peng@gmail.com
  * @Project: tracer
  * @DateTime: 2019-11-21 22:35
- * @Description:
+ * @Description: 参考来源:
  */
 public class TraceIdGeneratorUtils {
 
@@ -31,7 +28,7 @@ public class TraceIdGeneratorUtils {
 
     private static String getTraceId(String ip, long timestamp, int nextId) {
         StringBuilder appender = new StringBuilder(30);
-        appender.append(ip).append(timestamp).append(nextId).append(XRuntimeUtils.getPid());
+        appender.append(ip).append(timestamp).append(nextId).append(RuntimeUtils.getPid());
         return appender.toString();
     }
 

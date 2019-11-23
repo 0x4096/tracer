@@ -7,18 +7,20 @@
     <groupId>com.github.x4096</groupId>
     <artifactId>tracer</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <modules>
-        <module>tracer-dubbo</module>
         <module>tracer-common</module>
+        <module>tracer-core</module>
     </modules>
 
     <properties>
         <project.encoding>UTF-8</project.encoding>
-        <project.tracer-common>1.0.0-SNAPSHOT</project.tracer-common>
+        <project.tracer-common>1.0.0</project.tracer-common>
         <org.apache.dubbo>2.7.4.1</org.apache.dubbo>
+        <fastjson>1.2.62</fastjson>
         <commons-lang3>3.9</commons-lang3>
         <slf4j-api>1.7.29</slf4j-api>
+        <spring-webmvc>5.2.1.RELEASE</spring-webmvc>
     </properties>
 
     <dependencyManagement>
@@ -31,9 +33,9 @@
             </dependency>
 
             <dependency>
-                <groupId>com.github.0x4096</groupId>
-                <artifactId>common-utils</artifactId>
-                <version>1.0.0</version>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson}</version>
             </dependency>
 
             <dependency>
@@ -54,6 +56,11 @@
                 <version>${slf4j-api}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${spring-webmvc}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
@@ -91,22 +98,6 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9.1</version>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                        <configuration>
-                            <additionalparam>-Xdoclint:none</additionalparam>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.2.0</version>
                 <configuration>
@@ -115,7 +106,6 @@
                     </archive>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
 

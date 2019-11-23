@@ -10,10 +10,10 @@ import org.slf4j.MDC;
 /**
  * @Author: 0x4096.peng@gmail.com
  * @Project: tracer
- * @DateTime: 2019-11-21 22:16
+ * @DateTime: 2019-11-23 09:57
  * @Description:
  */
-@Activate(group = { CommonConstants.PROVIDER, CommonConstants.CONSUMER }, value = "dubboTracerFilter", order = 1)
+@Activate(group = {CommonConstants.PROVIDER, CommonConstants.CONSUMER}, value = "dubboTracerFilter", order = 1)
 public class DubboTracerFilter implements Filter {
 
     @Override
@@ -21,7 +21,10 @@ public class DubboTracerFilter implements Filter {
         RpcContext rpcContext = RpcContext.getContext();
         String rpcTraceId = rpcContext.getAttachment("rpcTraceId");
         if (StringUtils.isBlank(rpcTraceId)) {
-            rpcTraceId = TraceIdGeneratorUtils.generate();
+            rpcTraceId = MDC.get("traceId");
+            if (StringUtils.isBlank(rpcTraceId)) {
+                rpcTraceId = TraceIdGeneratorUtils.generate();
+            }
             rpcContext.setAttachment("rpcTraceId", rpcTraceId);
         }
         MDC.put("traceId", rpcTraceId);
