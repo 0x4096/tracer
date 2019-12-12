@@ -21,6 +21,7 @@
         <commons-lang3>3.9</commons-lang3>
         <slf4j-api>1.7.29</slf4j-api>
         <spring-webmvc>5.2.1.RELEASE</spring-webmvc>
+        <javax.servlet-api>4.0.1</javax.servlet-api>
     </properties>
 
     <dependencyManagement>
@@ -61,6 +62,14 @@
                 <artifactId>spring-webmvc</artifactId>
                 <version>${spring-webmvc}</version>
             </dependency>
+
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${javax.servlet-api}</version>
+                <scope>provided</scope>
+            </dependency>
+
 
         </dependencies>
     </dependencyManagement>
