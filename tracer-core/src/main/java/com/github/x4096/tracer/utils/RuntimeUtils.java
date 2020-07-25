@@ -1,4 +1,4 @@
-package com.github.x4096.tracer.common.utils;
+package com.github.x4096.tracer.utils;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -10,14 +10,14 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @Author: 0x4096.peng@gmail.com
  * @Project: tracer
  * @DateTime: 2019-11-23 11:59
- * @Description:
+ * @Description: 参考: https://github.com/vipshop/vjtools
  */
 public class RuntimeUtils {
 
     private RuntimeUtils() {
     }
 
-    private static AtomicInteger shutdownHookThreadIndex = new AtomicInteger(0);
+    private static final AtomicInteger shutdownHookThreadIndex = new AtomicInteger(0);
 
     /**
      * 获得当前进程的PID

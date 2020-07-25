@@ -1,1 +1,1 @@
-dubboTracerFilter=com.github.x4096.tracer.dubbo.filter.DubboTracerFilter
+dubboTracerFilter=DubboTracerFilter

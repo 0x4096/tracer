@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tracer-core" />
-        <module name="tracer-common" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tracer-common" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

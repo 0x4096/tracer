@@ -1,6 +1,6 @@
 package com.github.x4096.tracer.annotations;
 
-import com.github.x4096.tracer.configuration.InterceptorAnnotationConfig;
+import com.github.x4096.tracer.interceptor.TracerInterceptorLoader;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.ElementType;
@@ -16,7 +16,7 @@ import java.lang.annotation.Target;
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})
-@Import({InterceptorAnnotationConfig.class})
+@Import({TracerInterceptorLoader.class})
 public @interface EnableTracer {
 
 }
