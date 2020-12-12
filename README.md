@@ -21,7 +21,7 @@ https://github.com/0x4096/tracer
 <dependency>
     <groupId>com.github.0x4096</groupId>
     <artifactId>tracer-core</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
