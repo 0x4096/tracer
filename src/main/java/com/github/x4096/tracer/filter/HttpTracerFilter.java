@@ -18,7 +18,7 @@ import java.io.IOException;
  * @author 0x4096.peng@gmail.com
  * @date 2020/7/25
  */
-@WebFilter(urlPatterns = "/**")
+@WebFilter(urlPatterns = "/*")
 @Order(Ordered.HIGHEST_PRECEDENCE + 1024)
 @ConditionalOnProperty(prefix = "com.github.x4096.tracer", name = {"global-log-out", "mvc-log-out"}, matchIfMissing = true)
 public class HttpTracerFilter implements Filter {
