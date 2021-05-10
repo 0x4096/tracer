@@ -19,11 +19,18 @@ public class RuntimeUtils {
 
     private static final AtomicInteger shutdownHookThreadIndex = new AtomicInteger(0);
 
+    private static final int pid = pid();
+
     /**
      * 获得当前进程的PID
      * 当失败时返回-1
      */
     public static int getPid() {
+        return pid;
+    }
+
+
+    private static int pid() {
         /* format: "pid@hostname" */
         String jvmName = ManagementFactory.getRuntimeMXBean().getName();
         String[] split = jvmName.split("@");

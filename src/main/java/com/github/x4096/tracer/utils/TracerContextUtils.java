@@ -1,5 +1,6 @@
 package com.github.x4096.tracer.utils;
 
+import com.alibaba.ttl.TransmittableThreadLocal;
 import org.slf4j.MDC;
 
 /**
@@ -14,7 +15,7 @@ public class TracerContextUtils {
     private TracerContextUtils() {
     }
 
-    private static final ThreadLocal<String> TRACE_ID_THREAD_LOCAL = new ThreadLocal<>();
+    private static final ThreadLocal<String> TRACE_ID_THREAD_LOCAL = new TransmittableThreadLocal<>();
 
     /**
      * 设置 TracerId
