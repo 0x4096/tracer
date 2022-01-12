@@ -40,7 +40,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <main.user.dir>${user.dir}</main.user.dir>
-        <org.apache.dubbo>2.7.4.1</org.apache.dubbo>
+        <org.apache.dubbo>2.7.15</org.apache.dubbo>
         <fastjson>1.2.72</fastjson>
         <commons-lang3>3.9</commons-lang3>
         <slf4j-api>1.7.29</slf4j-api>
