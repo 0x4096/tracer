@@ -5,7 +5,7 @@
 
     <groupId>com.github.0x4096</groupId>
     <artifactId>tracer-core</artifactId>
-    <version>1.0.2-20220929</version>
+    <version>1.0.2</version>
 
     <name>tracer-core</name>
     <description>简单分布式日志追踪</description>
