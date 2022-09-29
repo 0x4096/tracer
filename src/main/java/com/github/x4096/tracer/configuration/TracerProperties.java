@@ -51,16 +51,6 @@ public class TracerProperties {
     private boolean rpcResponseLogOut = true;
 
     /**
-     * MVC 响应时间日志输出
-     */
-    private boolean mvcResponseTimeLogOut = true;
-
-    /**
-     * RPC 响应时间日志输出
-     */
-    private boolean rpcResponseTimeLogOut = true;
-
-    /**
      * SpringMVC 配置
      */
     @NestedConfigurationProperty
@@ -122,22 +112,6 @@ public class TracerProperties {
         this.rpcResponseLogOut = rpcResponseLogOut;
     }
 
-    public boolean isMvcResponseTimeLogOut() {
-        return mvcResponseTimeLogOut;
-    }
-
-    public void setMvcResponseTimeLogOut(boolean mvcResponseTimeLogOut) {
-        this.mvcResponseTimeLogOut = mvcResponseTimeLogOut;
-    }
-
-    public boolean isRpcResponseTimeLogOut() {
-        return rpcResponseTimeLogOut;
-    }
-
-    public void setRpcResponseTimeLogOut(boolean rpcResponseTimeLogOut) {
-        this.rpcResponseTimeLogOut = rpcResponseTimeLogOut;
-    }
-
     public TracerSpringMvcProperties getSpringMvcProperties() {
         return springMvcProperties;
     }
@@ -156,8 +130,6 @@ public class TracerProperties {
                 ", rpcRequestLogOut=" + rpcRequestLogOut +
                 ", mvcResponseLogOut=" + mvcResponseLogOut +
                 ", rpcResponseLogOut=" + rpcResponseLogOut +
-                ", mvcResponseTimeLogOut=" + mvcResponseTimeLogOut +
-                ", rpcResponseTimeLogOut=" + rpcResponseTimeLogOut +
                 ", springMvcProperties=" + springMvcProperties +
                 '}';
     }

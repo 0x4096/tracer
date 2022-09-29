@@ -143,16 +143,10 @@ public class TracingMvcMethodInterceptor extends TracingMethodInterceptor {
                     Map<String, String> headersMap = new HashMap<>(headers.size());
                     headers.forEach(headerKey -> headersMap.put(headerKey, response.getHeader(headerKey)));
 
-                    logger.info("{}, responseParams: {}, responseHeaders: {}", common, responseContent, JSON.toJSONString(headersMap));
+                    logger.info("{}, responseParams: {}, responseHeaders: {}, executeTime(millisecond): {}", common, responseContent, JSON.toJSONString(headersMap), end);
                 }
 
             }
-
-            /* 执行时间 */
-            if (urlLogOut && tracerProperties.isMvcResponseTimeLogOut()) {
-                logger.info("{}, executeTime(millisecond): {}", common, end);
-            }
-
         }
 
         return proceed;

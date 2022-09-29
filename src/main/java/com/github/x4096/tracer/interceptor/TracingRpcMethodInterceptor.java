@@ -72,12 +72,7 @@ public class TracingRpcMethodInterceptor extends TracingMethodInterceptor {
             }
 
             if (tracerProperties.isRpcResponseLogOut()) {
-                logger.info("{}, responseParams: {}", common, responseContent);
-            }
-
-            /* 执行时间 */
-            if (tracerProperties.isRpcResponseTimeLogOut()) {
-                logger.info("{}, executeTime(millisecond): {}", common, end);
+                logger.info("{}, responseParams: {}, executeTime(millisecond): {}", common, responseContent, end);
             }
 
             TracerContextUtils.clear();
