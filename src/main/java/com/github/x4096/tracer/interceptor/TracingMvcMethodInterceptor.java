@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.github.x4096.tracer.configuration.TracerProperties;
 import com.github.x4096.tracer.configuration.TracerSpringMvcProperties;
+import com.github.x4096.tracer.utils.IPUtils;
 import org.aopalliance.intercept.MethodInvocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -109,10 +110,10 @@ public class TracingMvcMethodInterceptor extends TracingMethodInterceptor {
         if (null != request) {
             String uri = request.getRequestURI();
             urlLogOut = (includeUrlSet.size() == 0 || includeUrlSet.contains(uri)) && !excludeUrlSet.contains(uri);
-
+            String reqIp = IPUtils.getNetIpAddr(request);
             if (tracerProperties.isMvcRequestLogOut() && urlLogOut) {
-                logger.info("{}, requestParams: {}, requestUri: {}, requestHeaders: {}",
-                        common, JSON.toJSONString(argumentList), request.getRequestURI(), JSON.toJSONString(request.getParameterMap()));
+                logger.info("{}, reqIp: {}, reqParams: {}, reqUri: {}, reqHeaders: {}",
+                        common, reqIp, JSON.toJSONString(argumentList), request.getRequestURI(), JSON.toJSONString(request.getParameterMap()));
             }
         }
 
@@ -143,7 +144,7 @@ public class TracingMvcMethodInterceptor extends TracingMethodInterceptor {
                     Map<String, String> headersMap = new HashMap<>(headers.size());
                     headers.forEach(headerKey -> headersMap.put(headerKey, response.getHeader(headerKey)));
 
-                    logger.info("{}, responseParams: {}, responseHeaders: {}, executeTime(millisecond): {}", common, responseContent, JSON.toJSONString(headersMap), end);
+                    logger.info("{}, resParams: {}, resHeaders: {}, executeTime(millisecond): {}", common, responseContent, JSON.toJSONString(headersMap), end);
                 }
 
             }
