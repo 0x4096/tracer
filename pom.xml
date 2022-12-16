@@ -44,7 +44,7 @@
         <fastjson>1.2.72</fastjson>
         <commons-lang3>3.9</commons-lang3>
         <slf4j-api>1.7.29</slf4j-api>
-        <spring>5.2.1.RELEASE</spring>
+        <spring>5.2.20.RELEASE</spring>
         <spring-auto-config>2.2.1.RELEASE</spring-auto-config>
         <aspectjweaver>1.9.4</aspectjweaver>
         <javax.servlet-api>4.0.1</javax.servlet-api>
