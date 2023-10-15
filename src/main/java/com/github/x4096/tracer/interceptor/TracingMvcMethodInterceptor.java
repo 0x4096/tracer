@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.github.x4096.tracer.configuration.TracerProperties;
 import com.github.x4096.tracer.configuration.TracerSpringMvcProperties;
+import com.github.x4096.tracer.utils.HttpHeaderUtils;
 import com.github.x4096.tracer.utils.IPUtils;
 import org.aopalliance.intercept.MethodInvocation;
 import org.slf4j.Logger;
@@ -113,7 +114,7 @@ public class TracingMvcMethodInterceptor extends TracingMethodInterceptor {
             String reqIp = IPUtils.getNetIpAddr(request);
             if (tracerProperties.isMvcRequestLogOut() && urlLogOut) {
                 logger.info("{}, reqIp: {}, reqParams: {}, reqUri: {}, reqHeaders: {}",
-                        common, reqIp, JSON.toJSONString(argumentList), request.getRequestURI(), JSON.toJSONString(request.getParameterMap()));
+                        common, reqIp, JSON.toJSONString(argumentList), request.getRequestURI(), JSON.toJSONString(HttpHeaderUtils.header2Map(request)));
             }
         }
 

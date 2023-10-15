@@ -2,6 +2,7 @@ package com.github.x4096.tracer.annotations;
 
 import com.github.x4096.tracer.configuration.TracerProperties;
 import com.github.x4096.tracer.interceptor.TracerInterceptorLoader;
+import com.github.x4096.tracer.interceptor.mybatis.MybatisSqlTracerInterceptorLoader;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Import;
 
@@ -18,7 +19,7 @@ import java.lang.annotation.Target;
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})
-@Import({TracerInterceptorLoader.class, TracerProperties.class})
+@Import({TracerInterceptorLoader.class, MybatisSqlTracerInterceptorLoader.class, TracerProperties.class})
 @ServletComponentScan(basePackages = "com.github.x4096.tracer")
 public @interface EnableTracer {
 

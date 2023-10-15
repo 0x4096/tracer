@@ -56,6 +56,9 @@ public class TracerProperties {
     @NestedConfigurationProperty
     private TracerSpringMvcProperties springMvcProperties;
 
+    @NestedConfigurationProperty
+    private TracerMySqlProperties mySqlProperties;
+
     public boolean isGlobalLogOut() {
         return globalLogOut;
     }
@@ -120,6 +123,14 @@ public class TracerProperties {
         this.springMvcProperties = springMvcProperties;
     }
 
+    public TracerMySqlProperties getMySqlProperties() {
+        return mySqlProperties;
+    }
+
+    public void setMySqlProperties(TracerMySqlProperties mySqlProperties) {
+        this.mySqlProperties = mySqlProperties;
+    }
+
     @Override
     public String toString() {
         return "TracerProperties{" +
@@ -131,6 +142,7 @@ public class TracerProperties {
                 ", mvcResponseLogOut=" + mvcResponseLogOut +
                 ", rpcResponseLogOut=" + rpcResponseLogOut +
                 ", springMvcProperties=" + springMvcProperties +
+                ", mySqlProperties=" + mySqlProperties +
                 '}';
     }
 

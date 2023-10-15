@@ -5,7 +5,7 @@
 
     <groupId>com.github.0x4096</groupId>
     <artifactId>tracer-core</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.3-SNAPSHOT</version>
 
     <name>tracer-core</name>
     <description>简单分布式日志追踪</description>
@@ -33,20 +33,21 @@
     </scm>
 
 
-
     <properties>
+        <java.version>1.8</java.version>
+        <encoding>UTF-8</encoding>
         <project.encoding>UTF-8</project.encoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <main.user.dir>${user.dir}</main.user.dir>
-        <org.apache.dubbo>2.7.4.1</org.apache.dubbo>
-        <fastjson>1.2.72</fastjson>
-        <commons-lang3>3.9</commons-lang3>
-        <slf4j-api>1.7.29</slf4j-api>
+        <org.apache.dubbo>2.7.21</org.apache.dubbo>
+        <fastjson>1.2.83</fastjson>
+        <commons-lang3>3.12.0</commons-lang3>
+        <slf4j-api>2.0.5</slf4j-api>
         <spring>5.2.1.RELEASE</spring>
         <spring-auto-config>2.2.1.RELEASE</spring-auto-config>
-        <aspectjweaver>1.9.4</aspectjweaver>
+        <aspectjweaver>1.9.19</aspectjweaver>
         <javax.servlet-api>4.0.1</javax.servlet-api>
     </properties>
 
@@ -56,6 +57,7 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>${fastjson}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -69,6 +71,7 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>${commons-lang3}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -119,6 +122,13 @@
             <groupId>com.alibaba</groupId>
             <artifactId>transmittable-thread-local</artifactId>
             <version>2.12.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.2.2</version>
+            <scope>provided</scope>
         </dependency>
 
     </dependencies>
