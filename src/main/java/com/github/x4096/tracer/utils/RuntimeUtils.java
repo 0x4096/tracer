@@ -1,6 +1,8 @@
 package com.github.x4096.tracer.utils;
 
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.lang.management.ManagementFactory;
 import java.util.List;
@@ -13,6 +15,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @Description: 参考: https://github.com/vipshop/vjtools
  */
 public class RuntimeUtils {
+
+    private static final Logger logger = LoggerFactory.getLogger(RuntimeUtils.class);
 
     private RuntimeUtils() {
     }
@@ -41,6 +45,7 @@ public class RuntimeUtils {
         try {
             return Integer.parseInt(split[0]);
         } catch (Exception e) {
+            logger.error("get pid exception, jvmName:{}", jvmName, e);
             return -1;
         }
     }

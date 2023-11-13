@@ -50,6 +50,10 @@ public class MybatisSqlInterceptor extends TracingMethodInterceptor implements I
     @Override
     public Object intercept(Invocation invocation) throws Throwable {
         Object[] args = invocation.getArgs();
+        if (args == null || args.length < 2) {
+            return invocation.proceed();
+        }
+
         MappedStatement ms = (MappedStatement) args[0];
         Object parameter = args[1];
         BoundSql boundSql = ms.getBoundSql(parameter);

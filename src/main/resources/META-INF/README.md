@@ -37,6 +37,9 @@ https://github.com/0x4096/tracer
 private HiserviceFacade hiserviceFacade;
 ```
 
+#### MySQL 日志
+打印 MySQL SQL 语句和耗时
+
 #### 日志配置
 ```
 <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger Line:%-3L  - traceId:[%X{traceId}] - %msg%n</pattern>
