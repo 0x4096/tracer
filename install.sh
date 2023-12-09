@@ -1,0 +1,1 @@
+mvn -X clean install

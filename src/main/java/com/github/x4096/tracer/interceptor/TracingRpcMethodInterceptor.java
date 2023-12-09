@@ -66,7 +66,9 @@ public class TracingRpcMethodInterceptor extends TracingMethodInterceptor {
                 try {
                     responseContent = JSON.toJSONString(proceed, SerializerFeature.WriteMapNullValue, SerializerFeature.WriteNullListAsEmpty, SerializerFeature.DisableCircularReferenceDetect);
                 } catch (Exception e) {
-                    // logger.error("JSON.toJSONString Error", e);
+                    if (logger.isDebugEnabled()) {
+                        logger.error("JSON.toJSONString Error", e);
+                    }
                     responseContent = "JSON.toJSONString Error Ignore.";
                 }
             }

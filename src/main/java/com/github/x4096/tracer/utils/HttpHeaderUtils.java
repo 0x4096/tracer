@@ -1,6 +1,7 @@
 package com.github.x4096.tracer.utils;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
+
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;

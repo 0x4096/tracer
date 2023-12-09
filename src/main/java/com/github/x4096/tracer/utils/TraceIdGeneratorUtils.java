@@ -1,8 +1,8 @@
 package com.github.x4096.tracer.utils;
 
+import jakarta.servlet.http.HttpServletRequest;
 import org.apache.commons.lang3.StringUtils;
 
-import javax.servlet.http.HttpServletRequest;
 import java.time.Clock;
 import java.util.Date;
 import java.util.concurrent.atomic.AtomicInteger;

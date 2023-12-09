@@ -8,7 +8,11 @@ https://github.com/0x4096/tracer
 
 ### 功能
 1. HTTP服务(SpringMVC)
-2. RPC服务(Dubbo) 
+2. RPC服务(Dubbo)
+
+### 要求
+1. spring6.x.x
+2. jdk17
 
 ### 使用方式
 1. 在SpringBoot启动类上使用 @EnableTracer 注解,表示启用该功能;
@@ -21,7 +25,7 @@ https://github.com/0x4096/tracer
 <dependency>
     <groupId>com.github.0x4096</groupId>
     <artifactId>tracer-core</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.4</version>
 </dependency>
 ```
 

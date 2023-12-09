@@ -6,6 +6,8 @@ import com.github.x4096.tracer.configuration.TracerProperties;
 import com.github.x4096.tracer.configuration.TracerSpringMvcProperties;
 import com.github.x4096.tracer.utils.HttpHeaderUtils;
 import com.github.x4096.tracer.utils.IPUtils;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.aopalliance.intercept.MethodInvocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,8 +18,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
 import java.time.Clock;
 import java.util.*;
@@ -132,7 +132,9 @@ public class TracingMvcMethodInterceptor extends TracingMethodInterceptor {
                 try {
                     responseContent = JSON.toJSONString(proceed, SerializerFeature.WriteMapNullValue, SerializerFeature.WriteNullListAsEmpty, SerializerFeature.DisableCircularReferenceDetect);
                 } catch (Exception e) {
-                    // logger.error("JSON.toJSONString Error", e);
+                    if (logger.isDebugEnabled()) {
+                        logger.error("JSON.toJSONString Error", e);
+                    }
                     responseContent = "JSON.toJSONString Error Ignore.";
                 }
             }
